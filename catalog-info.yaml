@@ -1,13 +1,19 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: airbyte
-  description: Airbyte instance for data integration
+  name: airbyte-getsales
+  description: Airbyte instance for getsales.nl
   annotations:
-    backstage.io/kubernetes-id: airbyte
-    backstage.io/techdocs-ref: dir:.
-    backstage.io/website: https://airbyte.getsales.nl
+    # Add any relevant annotations here, for example:
+    # github.com/project-slug: <GitHub project slug>
+    # backstage.io/techdocs-ref: url:<URL to TechDocs>
 spec:
   type: service
-  lifecycle: production
-  owner: data-team
+  lifecycle: production # or another suitable lifecycle
+  owner: team-data # or another suitable owner
+  system: data-platform # or another suitable system
+  # ... other spec properties as needed ...
+  links:
+    - url: https://airbyte.getsales.nl
+      title: Airbyte Instance
+      icon: link
