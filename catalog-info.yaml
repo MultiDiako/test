@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: airbyte
+  description: Airbyte instance for data integration
+  annotations:
+    backstage.io/kubernetes-id: airbyte
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/website: https://airbyte.getsales.nl
+spec:
+  type: service
+  lifecycle: production
+  owner: data-team
