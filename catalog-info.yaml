@@ -3,6 +3,10 @@ kind: Component
 metadata:
   name: airbyte-getsales
   description: Airbyte instance for getsales.nl
+  links:
+    - url: https://airbyte.getsales.nl
+      title: Airbyte Instance
+      icon: link
   annotations:
     # Add any relevant annotations here, for example:
     # github.com/project-slug: <GitHub project slug>
@@ -13,7 +17,3 @@ spec:
   owner: team-data # or another suitable owner
   system: data-platform # or another suitable system
   # ... other spec properties as needed ...
-  links:
-    - url: https://airbyte.getsales.nl
-      title: Airbyte Instance
-      icon: link
